@@ -1,10 +1,15 @@
 #include<stdio.h>
+void days(int d)
+{
+    int y, w;
+    y=d/365;
+    w=(d%365)/7;
+    printf("%d
+%d",y ,w);
+}
 int main()
 {
-    int d, y=365, w=7;
+    int d, w, y;
     scanf("%d",&d);
-    w=(d%y)/w;
-    y=(d/y);
-    printf("%d
-%d",y ,w );
+    days(d);
 }
