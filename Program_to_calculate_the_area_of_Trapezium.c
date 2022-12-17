@@ -1,9 +1,14 @@
 #include<stdio.h>
+void area(int b, int c, int h)
+{
+    float a;
+    a=0.5*h*(b+c);
+    printf("%.4f",a);
+}
 int main()
 {
-    int a, b, h;
-    scanf("%d %d %d",&a, &b, &h);
-    float area;
-    area=0.5*h*(a+b);
-    printf("%.4f",area);
-}
+    int b, c, h;
+    float a;
+    scanf("%d %d %d", &b, &c, &h);
+    area(b ,c ,h);
+} 
