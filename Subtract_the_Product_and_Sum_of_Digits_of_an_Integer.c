@@ -1,13 +1,16 @@
 #include<stdio.h>
-int main()
-{
-    int n,s=0,p=1,r;
-    scanf("%d",&n);
-    while(n>0)
-    {
-        r=n%10;
-        p=p*r;s=s+r;n=n/10;
+int main(){
+    int a;
+    scanf("%d",&a);
+    int temp=0,b=0,c=1;
+    while(a>0){
+        b=b+a%10;
+        
+        temp=temp+a%10;
+        c=c*(a%10);
+        a=a/10;
+        temp=temp*10;
     }
-    if(s>p) printf("%d",s-p);
-    else printf("%d",p-s);
+    
+    printf("%d",c-b);
 }
